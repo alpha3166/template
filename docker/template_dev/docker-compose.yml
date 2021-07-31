@@ -1,0 +1,11 @@
+version: '3'
+services:
+  ws:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: template-dev
+    user: 1000:1000
+    volumes:
+      - ../..:/template
+    working_dir: /template
