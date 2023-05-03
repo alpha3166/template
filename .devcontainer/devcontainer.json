@@ -1,14 +1,14 @@
 {
-	"dockerComposeFile": [
-		"../docker/template-dev/docker-compose.yml",
-		"docker-compose.yml"
-	],
-	"service": "ws",
-	"workspaceFolder": "/template",
-	"extensions": [
-		// Docker
-		"ms-azuretools.vscode-docker",
-		// markdownlint
-		"DavidAnson.vscode-markdownlint"
-	]
+  "dockerComposeFile": [
+    "../docker/template-dev/docker-compose.yml",
+    "docker-compose.yml"
+  ],
+  "service": "ws",
+  "workspaceFolder": "/template",
+  "extensions": [
+    // Docker
+    "ms-azuretools.vscode-docker",
+    // markdownlint
+    "DavidAnson.vscode-markdownlint"
+  ]
 }
