@@ -5,10 +5,14 @@
   ],
   "service": "ws",
   "workspaceFolder": "/template",
-  "extensions": [
-    // Docker
-    "ms-azuretools.vscode-docker",
-    // markdownlint
-    "DavidAnson.vscode-markdownlint"
-  ]
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        // Docker
+        "ms-azuretools.vscode-docker",
+        // markdownlint
+        "DavidAnson.vscode-markdownlint"
+      ]
+    }
+  }
 }
