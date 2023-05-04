@@ -1,9 +1,9 @@
 {
   "dockerComposeFile": [
-    "../docker/template-dev/compose.yml",
-    "compose.yml"
+    "../docker/template-dev/compose.yml"
   ],
   "service": "ws",
+  "overrideCommand": true,
   "workspaceFolder": "/template",
   "customizations": {
     "vscode": {
