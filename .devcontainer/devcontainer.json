@@ -1,7 +1,7 @@
 {
   "dockerComposeFile": [
-    "../docker/template-dev/docker-compose.yml",
-    "docker-compose.yml"
+    "../docker/template-dev/compose.yml",
+    "compose.yml"
   ],
   "service": "ws",
   "workspaceFolder": "/template",
