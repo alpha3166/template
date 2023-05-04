@@ -1,7 +1,8 @@
 FROM alpine
-RUN addgroup -g 1000 me && \
-    adduser -u 1000 -G me -D me
+ARG USERNAME=me
+RUN addgroup -g 1000 $USERNAME && \
+    adduser -u 1000 -G $USERNAME -D $USERNAME
 RUN apk -U add sudo && \
-    echo "me ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/me
+    echo "$USERNAME ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/$USERNAME
 RUN apk -U add git less
-USER me
+USER $USERNAME
