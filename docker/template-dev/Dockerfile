@@ -4,3 +4,4 @@ RUN addgroup -g 1000 me && \
 RUN apk -U add sudo && \
     echo "me ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/me
 RUN apk -U add git less
+USER me
