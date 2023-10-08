@@ -9,6 +9,6 @@ RUN groupadd --gid 1000 $USERNAME && \
 RUN apt-get install --yes sudo && \
     echo "$USERNAME ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/$USERNAME
 
-RUN apt-get install --yes git less
+RUN apt-get install --yes vim git less
 
 USER $USERNAME
